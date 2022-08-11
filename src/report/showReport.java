@@ -29,7 +29,7 @@ connection  c ;
     public showReport() {
         initComponents();
     }
-public boolean showreport(String date) {
+    public boolean showreport(String date) {
 c=new connection();
          boolean check=false;
         
@@ -44,12 +44,9 @@ c=new connection();
                {
            model.addRow( new Object[]{rs.getString(1),rs.getString(2)});
               JOptionPane.showMessageDialog(rootPane, "the report Display");
-               check=true;}
+               check=true;}}
                
-               else
-                   JOptionPane.showMessageDialog(rootPane, "Enter the valid date");
-    
-           }
+   if(check==false) { JOptionPane.showMessageDialog(rootPane, "Enter the valid date"); }
        } catch (Exception ex) {
        JOptionPane.showMessageDialog(rootPane, ex);
        }
