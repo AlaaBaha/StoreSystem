@@ -1,0 +1,7 @@
+1_The function of verifying the addition of an order, where one of the expected errors is to add the order_id of a character type and it can be corrected by writing the number . 
+
+2_ Delete and modify function and verify that the order_id must be written in the database and is processed by writing the order_id that is in the database  . 
+
+3_The display function is passed by a table in the database. 
+
+4_  The report function checks that the entered date is in the database, and the processing is done by entering the existing date
