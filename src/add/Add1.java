@@ -5,6 +5,7 @@
  */
 package add;
 
+import java.awt.HeadlessException;
 import mainhome.connection;
 import secondpage.page1;
 import java.sql.Connection;
@@ -292,7 +293,7 @@ public class Add1 extends javax.swing.JFrame {
 
     public boolean Add(int ID,String name,String status,String date,String  shipping_date){
           boolean check=false;
-       if((jComboBox1.getSelectedItem()).equals("Orders table ")){
+      
             
           con =new connection();
            Statement  pst=con.connect();
@@ -308,17 +309,17 @@ public class Add1 extends javax.swing.JFrame {
                  jTextField4.setText("");
                   jTextField5.setText("");
                   check=true;
-         pst.close();
+         pst.close();  
        
          }
   
         catch (Exception ex) {
       
-            JOptionPane.showMessageDialog(rootPane, "Please inter number value in order and product ID");
-            check=false;
+             //JOptionPane.showMessageDialog(rootPane, "Please inter number value in order and product ID");
+          
             }
         // TODO add your handling code here:
-        }
+        
          return check;  
           }
     /**
