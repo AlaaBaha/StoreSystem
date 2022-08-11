@@ -43,12 +43,13 @@ c=new connection();
                if(rs.getString("date").equals(date))
                {
            model.addRow( new Object[]{rs.getString(1),rs.getString(2)});
+              JOptionPane.showMessageDialog(rootPane, "the report Display");
                check=true;}
+               
+               else
+                   JOptionPane.showMessageDialog(rootPane, "Enter the valid date");
+    
            }
-           if(check==true)
-                 JOptionPane.showMessageDialog(rootPane, "the report Display");
-           else
-                JOptionPane.showMessageDialog(rootPane, "Enter the valid date");
        } catch (Exception ex) {
        JOptionPane.showMessageDialog(rootPane, ex);
        }
